@@ -85,7 +85,7 @@ h2 {
     background: rgba(255,255,255,0.03);
     border: 1px solid rgba(255,255,255,0.08);
 
-    text-align: center;
+    text-align: left; /* 🔥 CAMBIO CLAVE */
     color: #cbd5e1;
 }
 
