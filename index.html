@@ -4,38 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mikel Briz | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
-    <h1>Mikel Briz</h1>
+    <!-- HERO -->
 
-    <h2>Estudiante de Matemáticas | Data Science</h2>
+    <section class="hero">
 
-    <p>
-        Estudiante de último curso del Grado en Matemáticas con interés en
-        Ciencia de Datos, Machine Learning y Analítica de Datos.
-    </p>
+        <div class="hero-content">
 
-    <h2>Proyectos</h2>
+            <h1>Hola, soy <span>Mikel Briz</span></h1>
 
-    <ul>
-        <li>LaboraLens</li>
-        <li>LaboraAnalytics</li>
-    </ul>
+            <h2>Matemáticas • Data Science • Machine Learning</h2>
 
-    <h2>Habilidades</h2>
+            <p>
+                Estudiante de último curso del Grado en Matemáticas
+                apasionado por la Ciencia de Datos, la estadística
+                y la Inteligencia Artificial.
+            </p>
 
-    <ul>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Pandas</li>
-        <li>Machine Learning</li>
-        <li>Git y GitHub</li>
-    </ul>
+            <div class="buttons">
+                <a href="#projects" class="btn">Ver proyectos</a>
+                <a href="assets/cv.pdf" class="btn secondary">Descargar CV</a>
+            </div>
 
-    <h2>Contacto</h2>
+        </div>
 
-    <p>Email: tuemail@ejemplo.com</p>
+    </section>
+
+    <!-- SOBRE MI -->
+
+    <section class="about">
+
+        <h2>Sobre mí</h2>
+
+        <p>
+            Soy estudiante de Matemáticas con interés en Data Science,
+            Machine Learning y analítica de negocio.
+            Disfruto resolviendo problemas mediante modelos matemáticos,
+            estadística y programación.
+        </p>
+
+    </section>
+
+    <!-- TECNOLOGÍAS -->
+
+    <section class="skills">
+
+        <h2>Tecnologías</h2>
+
+        <div class="cards">
+
+            <div class="card"><i class="fab fa-python"></i> Python</div>
+            <div class="card"><i class="fas fa-database"></i> SQL</div>
+            <div class="card"><i class="fas fa-chart-line"></i> Pandas</div>
+            <div class="card"><i class="fas fa-brain"></i> Machine Learning</div>
+            <div class="card"><i class="fab fa-git-alt"></i> Git</div>
+
+        </div>
+
+    </section>
+
+    <!-- PROYECTOS -->
+
+    <section id="projects">
+
+        <h2>Proyectos</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+
+                <h3>LaboraLens</h3>
+
+                <p>
+                    Análisis del mercado laboral utilizando técnicas
+                    de Ciencia de Datos.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>LaboraAnalytics</h3>
+
+                <p>
+                    Analítica orientada a pequeñas empresas y negocio.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section class="contact">
+
+        <h2>Contacto</h2>
+
+        <a href="https://github.com/mikelbriz13">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+
+    </section>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
