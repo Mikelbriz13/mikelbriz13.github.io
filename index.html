@@ -4,120 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mikel Briz | Data Science Portfolio</title>
+    <title>Mikel Briz | Data Science</title>
 
     <link rel="stylesheet" href="style.css">
-
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- BACKGROUND -->
-    <div class="bg"></div>
+<div class="bg"></div>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">MB</div>
+<!-- NAV -->
+<nav class="navbar">
+    <div class="logo">MB</div>
 
-        <ul class="nav-links">
-            <li><a href="#hero">Inicio</a></li>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
+    <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+    </ul>
+</nav>
 
-    <!-- HERO -->
-    <section class="hero" id="hero">
+<!-- HERO -->
+<section class="hero">
 
-        <div class="hero-content">
+    <div class="hero-box">
 
-            <p class="subtitle">Matemáticas · Data Science · Machine Learning</p>
+        <p class="subtitle">Matemáticas · Data Science · ML</p>
 
-            <h1>Hola, soy <span>Mikel Briz</span></h1>
+        <h1>Hola, soy <span>Mikel Briz</span></h1>
 
-            <h2 class="typing"></h2>
+        <h2 class="typing"></h2>
 
-            <p class="description">
-                Transformo datos en conocimiento mediante matemáticas,
-                estadística y machine learning aplicado.
-            </p>
-
-            <div class="buttons">
-
-                <a href="#about" class="btn">Sobre mí</a>
-
-                <a href="assets/CV-Mikel-Briz-Descarga.pdf"
-                   class="btn secondary"
-                   target="_blank">
-                    Descargar CV
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-
-        <h2>Sobre mí</h2>
-
-        <p class="about-text">
-            Soy estudiante de último curso del Grado en Matemáticas.
-            Me especializo en Ciencia de Datos, Machine Learning y análisis estadístico.
-            Me motiva convertir problemas complejos en soluciones basadas en datos.
+        <p class="description">
+            Transformo datos en conocimiento usando matemáticas, estadística y machine learning.
         </p>
 
-    </section>
+        <div class="buttons">
 
-    <!-- STATS -->
-   
-
-    <!-- SKILLS -->
-    <section id="skills">
-
-        <h2>Skills</h2>
-
-        <div class="cards">
-
-            <div class="card"><i class="fab fa-python"></i><p>Python</p></div>
-            <div class="card"><i class="fas fa-database"></i><p>SQL</p></div>
-            <div class="card"><i class="fas fa-chart-line"></i><p>Pandas</p></div>
-            <div class="card"><i class="fas fa-brain"></i><p>Machine Learning</p></div>
-            <div class="card"><i class="fas fa-square-root-alt"></i><p>Maths</p></div>
-
-        </div>
-
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-
-        <h2>Contacto</h2>
-
-        <div class="socials">
-
-            <a href="https://github.com/mikelbriz13" target="_blank">
-                <i class="fab fa-github"></i>
+            <a class="btn" href="assets/CV-Mikel-Briz-Descarga.pdf" target="_blank">
+                Descargar CV
             </a>
 
-            <a href="https://www.linkedin.com/in/mikel-briz-desacarga/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-
-            <a href="mailto:mikelbriz@gmail.com">
-                <i class="fas fa-envelope"></i>
+            <a class="btn secondary" href="https://github.com/mikelbriz13" target="_blank">
+                GitHub
             </a>
 
         </div>
 
-    </section>
+    </div>
 
-    <script src="script.js"></script>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+
+    <h2>Sobre mí</h2>
+
+    <p class="text">
+        Soy estudiante de último curso del Grado en Matemáticas.
+        Me enfoco en Ciencia de Datos, Machine Learning y análisis cuantitativo.
+        Me interesa convertir problemas complejos en soluciones basadas en datos.
+    </p>
+
+</section>
+
+<!-- STACK -->
+<section id="stack">
+
+    <h2>Stack</h2>
+
+    <div class="grid">
+
+        <div class="card"><i class="fab fa-python"></i><p>Python</p></div>
+        <div class="card"><i class="fas fa-database"></i><p>SQL</p></div>
+        <div class="card"><i class="fas fa-brain"></i><p>Machine Learning</p></div>
+        <div class="card"><i class="fas fa-chart-line"></i><p>Pandas</p></div>
+        <div class="card"><i class="fas fa-square-root-alt"></i><p>Matemáticas</p></div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+
+    <h2>Proyectos</h2>
+
+    <div class="project-card">
+
+        <h3>En construcción 🚧</h3>
+
+        <p>
+            Estoy desarrollando proyectos en análisis de datos y ML.
+            Pronto aparecerán aquí.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+
+    <h2>Contacto</h2>
+
+    <div class="socials">
+
+        <a href="https://github.com/mikelbriz13"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:tuemail@correo.com"><i class="fas fa-envelope"></i></a>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
