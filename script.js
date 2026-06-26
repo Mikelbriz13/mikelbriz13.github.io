@@ -1,8 +1,8 @@
 
 const texts = [
-    "Data Scientist",
-    "Machine Learning Engineer",
-    "Mathematician"
+    "  Data Analystic  ",
+    "  Machine Learning Engineer  ",
+    "  Mathematician  "
 ];
 
 let i = 0;
@@ -32,7 +32,7 @@ function type() {
         }
     }
 
-    setTimeout(type, deleting ? 60 : 90);
+    setTimeout(type, deleting ? 50 : 100);
 }
 
 type();
