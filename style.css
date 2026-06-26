@@ -1,8 +1,4 @@
 
-/* =========================
-   RESET
-========================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -10,323 +6,140 @@
 }
 
 body {
-    font-family: Inter, 'Segoe UI', sans-serif;
-    background: radial-gradient(circle at top, #0b1220, #05070d);
+    font-family: Inter, sans-serif;
+    background: #05070d;
     color: white;
-    overflow-x: hidden;
 }
 
-/* =========================
-   BACKGROUND GLOW
-========================= */
-
+/* BACKGROUND */
 .bg {
     position: fixed;
     inset: 0;
     background: radial-gradient(circle at top, #0f172a, #05070d);
-    z-index: -2;
+    z-index: -1;
 }
 
-/* =========================
-   NAVBAR
-========================= */
-
+/* NAV */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
     padding: 18px 10%;
-
-    background: rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(12px);
-
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-
-    z-index: 1000;
+    background: rgba(0,0,0,0.4);
 }
 
 .logo {
     color: #60a5fa;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: bold;
 }
 
 .nav-links {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     list-style: none;
 }
 
 .nav-links a {
-    text-decoration: none;
     color: #aaa;
-    transition: 0.3s;
+    text-decoration: none;
 }
 
 .nav-links a:hover {
     color: #60a5fa;
 }
 
-/* =========================
-   HERO
-========================= */
-
+/* HERO */
 .hero {
-    min-height: 100vh;
-
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
-    padding-top: 80px;
-    position: relative;
 }
 
-/* glow suave */
-.hero::before {
-    content: "";
-    position: absolute;
-
-    width: 600px;
-    height: 600px;
-
-    background: #3b82f6;
-    filter: blur(180px);
-    opacity: 0.12;
-
-    top: -150px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    z-index: -1;
+h1 {
+    font-size: 4rem;
 }
 
-.subtitle {
-    color: #60a5fa;
-    letter-spacing: 3px;
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-}
-
-.hero h1 {
-    font-size: 4.5rem;
-    line-height: 1.1;
-}
-
-.hero span {
-    background: linear-gradient(90deg, #60a5fa, #a78bfa);
+span {
+    background: linear-gradient(90deg,#60a5fa,#a78bfa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* =========================
-   🔥 FIX REAL DEL TYPING
-========================= */
+.subtitle {
+    color: #60a5fa;
+}
 
 .typing {
-    margin-top: 15px;
-
-    font-size: 1.5rem;
+    height: 30px;
     color: #aaa;
-
-    min-height: 40px;          /* CLAVE: evita salto */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    white-space: nowrap;       /* evita cortes raros */
-    letter-spacing: 0.5px;
 }
 
-/* cursor */
-.typing::after {
-    content: "|";
-    margin-left: 6px;
-    color: #60a5fa;
-    animation: blink 0.8s infinite;
-}
-
-@keyframes blink {
-    50% { opacity: 0; }
-}
-
-/* =========================
-   DESCRIPCIÓN
-========================= */
-
-.description {
-    max-width: 700px;
-    margin: 20px auto;
-    color: #94a3b8;
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-/* =========================
-   BOTONES
-========================= */
-
-.buttons {
-    margin-top: 30px;
-}
-
+/* BUTTONS */
 .btn {
     display: inline-block;
-
-    padding: 12px 26px;
+    padding: 12px 24px;
     margin: 10px;
-
     border-radius: 999px;
-
-    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    background: linear-gradient(90deg,#3b82f6,#8b5cf6);
     color: white;
-
     text-decoration: none;
-    font-weight: 600;
-
-    transition: 0.3s;
-}
-
-.btn:hover {
-    transform: translateY(-6px);
 }
 
 .secondary {
     background: transparent;
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid #333;
 }
 
-/* =========================
-   SECCIONES
-========================= */
-
+/* SECTIONS */
 section {
     padding: 120px 10%;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 50px;
     color: #60a5fa;
+    margin-bottom: 40px;
 }
 
-/* =========================
-   ABOUT
-========================= */
-
-.about-text {
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-    color: #cbd5e1;
-    font-size: 1.1rem;
-}
-
-/* =========================
-   STATS
-========================= */
-
-.stats {
+/* STACK */
+.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 20px;
-}
-
-.stat-card {
-    background: rgba(255,255,255,0.03);
-    padding: 30px;
-    border-radius: 15px;
-
-    text-align: center;
-
-    transition: 0.3s;
-}
-
-.stat-card:hover {
-    transform: translateY(-10px);
-    border: 1px solid #60a5fa;
-}
-
-.stat-card h3 {
-    font-size: 2rem;
-    color: #60a5fa;
-}
-
-/* =========================
-   SKILLS
-========================= */
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
     gap: 20px;
 }
 
 .card {
     background: rgba(255,255,255,0.03);
-    padding: 30px;
+    padding: 25px;
+    text-align: center;
     border-radius: 15px;
+}
 
+/* PROJECT */
+.project-card {
     text-align: center;
-
-    transition: 0.3s;
+    padding: 40px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    border: 1px solid #60a5fa;
-}
-
-.card i {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #60a5fa;
-}
-
-/* =========================
-   CONTACTO
-========================= */
-
-.contact {
-    text-align: center;
-}
-
+/* CONTACT */
 .socials {
     display: flex;
     justify-content: center;
-    gap: 25px;
-    margin-top: 25px;
+    gap: 20px;
 }
 
 .socials a {
     font-size: 2rem;
     color: #aaa;
-    transition: 0.3s;
 }
 
 .socials a:hover {
     color: #60a5fa;
-    transform: scale(1.2);
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 900px) {
-
-    .hero h1 {
-        font-size: 2.8rem;
-    }
-
-    .typing {
-        font-size: 1.2rem;
-    }
 }
