@@ -90,20 +90,25 @@ h2 {
 }
 
 /* SKILLS */
+
 .skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+
+    max-width: 900px;
+    margin: auto;
 }
 
+/* CARD */
 .skill {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
 
-    padding: 12px 18px;
-    border-radius: 999px;
+    padding: 30px;
+    border-radius: 18px;
 
     background: rgba(255,255,255,0.03);
     border: 1px solid rgba(255,255,255,0.08);
@@ -111,28 +116,35 @@ h2 {
     cursor: pointer;
     transition: 0.3s;
 
+    text-align: center;
+}
+
+/* ICONO GRANDE */
+.skill i {
+    font-size: 3rem;
+    color: #60a5fa;
+    margin-bottom: 15px;
+
+    transition: 0.3s;
+}
+
+/* TEXTO */
+.skill span {
+    font-size: 1.1rem;
     color: #cbd5e1;
 }
 
-.skill i {
-    color: #60a5fa;
-    font-size: 1.1rem;
-}
-
+/* HOVER */
 .skill:hover {
-    transform: scale(1.15);
-    background: rgba(96,165,250,0.12);
+    transform: translateY(-10px) scale(1.05);
     border-color: #60a5fa;
-    color: white;
+    background: rgba(96,165,250,0.08);
 }
 
-/* 🔥 HOVER GROW */
-.skill:hover {
+.skill:hover i {
     transform: scale(1.2);
-    background: rgba(96,165,250,0.15);
-    border-color: #60a5fa;
+    color: #93c5fd;
 }
-
 /* PROJECT */
 .project-box {
     max-width: 500px;
