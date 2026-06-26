@@ -8,12 +8,14 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Iconos -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
+
+    <!-- BACKGROUND GRID -->
+    <div class="bg-grid"></div>
 
     <!-- NAVBAR -->
 
@@ -23,7 +25,7 @@
         <ul class="nav-links">
             <li><a href="#hero">Inicio</a></li>
             <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#skills">Tecnologías</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contacto</a></li>
         </ul>
     </nav>
@@ -32,149 +34,94 @@
 
     <section class="hero" id="hero">
 
-        <div class="hero-left">
+        <p class="subtitle">Matemáticas · Data Science · Machine Learning</p>
 
-            <p class="subtitle">Matemáticas · Data Science · Machine Learning</p>
+        <h1>
+            Hola, soy <span>Mikel Briz</span>
+        </h1>
 
-            <h1>
-                Hola, soy<br>
-                <span>Mikel Briz</span>
-            </h1>
+        <h2 class="typing"></h2>
 
-            <p class="description">
-                Utilizando matemáticas, estadística y programación
-                para transformar datos en conocimiento útil.
-            </p>
+        <p class="description">
+            Transformo datos en conocimiento usando matemáticas,
+            estadística y machine learning.
+        </p>
 
-            <div class="buttons">
+        <div class="buttons">
 
-                <a href="#about" class="btn">Sobre mí</a>
+            <a href="#about" class="btn">Sobre mí</a>
 
-                <a href="assets/CV-Mikel-Briz-Descarga.pdf"
-                   class="btn secondary"
-                   target="_blank">
-                    Descargar CV
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="hero-right">
-
-            <img src="assets/footoo.JPG" alt="Mikel Briz">
+            <a href="assets/CV-Mikel-Briz-Descarga.pdf"
+               class="btn secondary"
+               target="_blank">
+                Descargar CV
+            </a>
 
         </div>
 
     </section>
 
-    <!-- SOBRE MÍ -->
+    <!-- ABOUT -->
 
-    <section class="about" id="about">
+    <section id="about">
 
         <h2>Sobre mí</h2>
 
         <p>
-            Soy estudiante de último curso del Grado en Matemáticas
-            en la Universidad de Málaga. Me interesa la Ciencia de Datos,
-            el Machine Learning, la estadística y la modelización matemática.
-            Disfruto aplicando el pensamiento analítico para resolver problemas reales.
+            Estudiante de último curso de Matemáticas en la Universidad de Málaga.
+            Interesado en Data Science, Machine Learning, estadística y optimización.
         </p>
 
     </section>
 
-    <!-- MÉTRICAS -->
+    <!-- STATS -->
 
     <section class="stats">
 
-        <div class="stat-card">
-            <h3>6+</h3>
-            <p>Tecnologías</p>
-        </div>
-
-        <div class="stat-card">
-            <h3>4</h3>
-            <p>Áreas de interés</p>
-        </div>
-
-        <div class="stat-card">
-            <h3>2</h3>
-            <p>Proyectos en desarrollo</p>
-        </div>
-
-        <div class="stat-card">
-            <h3>2026</h3>
-            <p>Fin del Grado</p>
-        </div>
+        <div class="stat-card"><h3>6+</h3><p>Tecnologías</p></div>
+        <div class="stat-card"><h3>4</h3><p>Áreas</p></div>
+        <div class="stat-card"><h3>2</h3><p>Proyectos</p></div>
+        <div class="stat-card"><h3>2026</h3><p>Graduación</p></div>
 
     </section>
 
-    <!-- TECNOLOGÍAS -->
+    <!-- SKILLS -->
 
-    <section class="skills" id="skills">
+    <section id="skills">
 
-        <h2>Tecnologías</h2>
+        <h2>Skills</h2>
 
         <div class="cards">
 
-            <div class="card">
-                <i class="fab fa-python"></i>
-                <h3>Python</h3>
-            </div>
-
-            <div class="card">
-                <i class="fas fa-database"></i>
-                <h3>SQL</h3>
-            </div>
-
-            <div class="card">
-                <i class="fas fa-chart-line"></i>
-                <h3>Pandas</h3>
-            </div>
-
-            <div class="card">
-                <i class="fas fa-brain"></i>
-                <h3>Machine Learning</h3>
-            </div>
-
-            <div class="card">
-                <i class="fab fa-git-alt"></i>
-                <h3>Git & GitHub</h3>
-            </div>
-
-            <div class="card">
-                <i class="fas fa-square-root-alt"></i>
-                <h3>Matemáticas</h3>
-            </div>
+            <div class="card"><i class="fab fa-python"></i><p>Python</p></div>
+            <div class="card"><i class="fas fa-database"></i><p>SQL</p></div>
+            <div class="card"><i class="fas fa-chart-line"></i><p>Pandas</p></div>
+            <div class="card"><i class="fas fa-brain"></i><p>ML</p></div>
+            <div class="card"><i class="fas fa-square-root-alt"></i><p>Math</p></div>
 
         </div>
 
     </section>
 
-    <!-- CONTACTO -->
+    <!-- CONTACT -->
 
-    <section class="contact" id="contact">
+    <section id="contact" class="contact">
 
         <h2>Contacto</h2>
 
         <div class="socials">
 
-            <a href="https://github.com/mikelbriz13" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
+            <a href="https://github.com/mikelbriz13"><i class="fab fa-github"></i></a>
 
-            <a href="https://linkedin.com/in/TU-LINKEDIN" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
+            <a href="https://linkedin.com/in/TU-LINKEDIN"><i class="fab fa-linkedin"></i></a>
 
-            <a href="mailto:tuemail@correo.com">
-                <i class="fas fa-envelope"></i>
-            </a>
+            <a href="mailto:tuemail@correo.com"><i class="fas fa-envelope"></i></a>
 
         </div>
 
     </section>
 
-</body>
+    <script src="script.js"></script>
 
+</body>
 </html>
