@@ -13,12 +13,17 @@ function type() {
 
     const current = texts[i];
 
-    document.querySelector(".typing").textContent =
-        current.substring(0, j);
+    const element = document.querySelector(".typing");
+
+    element.textContent = current.substring(0, j);
 
     if (!deleting) {
         j++;
-        if (j === current.length) deleting = true;
+        if (j === current.length) {
+            deleting = true;
+            setTimeout(type, 1200);
+            return;
+        }
     } else {
         j--;
         if (j === 0) {
@@ -27,7 +32,7 @@ function type() {
         }
     }
 
-    setTimeout(type, deleting ? 60 : 100);
+    setTimeout(type, deleting ? 60 : 90);
 }
 
 type();
