@@ -19,38 +19,6 @@ body {
     z-index: -1;
 }
 
-/* NAV */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 18px 10%;
-    backdrop-filter: blur(12px);
-    background: rgba(0,0,0,0.4);
-}
-
-.logo {
-    color: #60a5fa;
-    font-weight: bold;
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-.nav-links a {
-    color: #aaa;
-    text-decoration: none;
-}
-
-.nav-links a:hover {
-    color: #60a5fa;
-}
-
 /* HERO */
 .hero {
     height: 100vh;
@@ -75,29 +43,30 @@ span {
 }
 
 .typing {
-    height: 30px;
     color: #aaa;
+    height: 30px;
+    margin-top: 10px;
 }
 
-/* BUTTONS */
+/* BUTTON */
 .btn {
     display: inline-block;
-    padding: 12px 24px;
-    margin: 10px;
+    margin-top: 20px;
+    padding: 12px 26px;
     border-radius: 999px;
     background: linear-gradient(90deg,#3b82f6,#8b5cf6);
     color: white;
     text-decoration: none;
+    transition: 0.3s;
 }
 
-.secondary {
-    background: transparent;
-    border: 1px solid #333;
+.btn:hover {
+    transform: scale(1.05);
 }
 
 /* SECTIONS */
 section {
-    padding: 120px 10%;
+    padding: 140px 10%;
 }
 
 h2 {
@@ -106,40 +75,85 @@ h2 {
     margin-bottom: 40px;
 }
 
-/* STACK */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-    gap: 20px;
+/* GLASS ABOUT */
+.glass {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+
+    text-align: center;
+    color: #cbd5e1;
 }
 
-.card {
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    padding: 12px 20px;
+    border-radius: 999px;
+
     background: rgba(255,255,255,0.03);
-    padding: 25px;
-    text-align: center;
-    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* 🔥 HOVER GROW */
+.skill:hover {
+    transform: scale(1.2);
+    background: rgba(96,165,250,0.15);
+    border-color: #60a5fa;
 }
 
 /* PROJECT */
-.project-card {
-    text-align: center;
+.project-box {
+    max-width: 500px;
+    margin: auto;
     padding: 40px;
-    border: 1px solid rgba(255,255,255,0.1);
+
+    text-align: center;
+
     border-radius: 20px;
+    border: 1px dashed rgba(255,255,255,0.2);
+
+    color: #aaa;
 }
 
 /* CONTACT */
 .socials {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .socials a {
     font-size: 2rem;
     color: #aaa;
+    transition: 0.3s;
 }
 
 .socials a:hover {
+    color: #60a5fa;
+    transform: scale(1.2);
+}
+
+.about-lines p {
+    margin: 12px 0;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.about-lines p::before {
+    content: "▹ ";
     color: #60a5fa;
 }
