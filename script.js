@@ -1,14 +1,13 @@
 
 const texts = [
-    "  Data Scientist  ",
-    "  Machine Learning Engineer  ",
-    "  Mathematician  ",
-    "  Data Analyst  "
+    "Data Scientist",
+    "Machine Learning Engineer",
+    "Mathematician"
 ];
 
 let i = 0;
 let j = 0;
-let isDeleting = false;
+let deleting = false;
 
 function type() {
 
@@ -17,22 +16,18 @@ function type() {
     document.querySelector(".typing").textContent =
         current.substring(0, j);
 
-    if (!isDeleting) {
+    if (!deleting) {
         j++;
-        if (j === current.length) {
-            isDeleting = true;
-            setTimeout(type, 1200);
-            return;
-        }
+        if (j === current.length) deleting = true;
     } else {
         j--;
         if (j === 0) {
-            isDeleting = false;
+            deleting = false;
             i = (i + 1) % texts.length;
         }
     }
 
-    setTimeout(type, isDeleting ? 50 : 100);
+    setTimeout(type, deleting ? 60 : 100);
 }
 
 type();
