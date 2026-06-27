@@ -1,126 +1,237 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mikel Briz | Math Student</title>
+    <title>Mikel Briz | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Iconos -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
 
-<div class="bg"></div>
+    <canvas id="bg-canvas"></canvas>
+    <!-- NAVBAR -->
 
-<!-- HERO -->
-<section class="hero">
+    <nav>
+        <div class="logo">MB</div>
 
-    <div class="hero-box">
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#learning">Learning</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
+         <!-- HAMBURGER BUTTON (MOBILE) -->
+        <div class="menu-toggle" id="menu-toggle">
+        ☰
+        </div>
         
+    </nav>
 
-        <h1>Hi, I'm <span>Mikel Briz</span></h1>
 
-        <h2 class="typing"></h2>
+    <!-- HERO SECTION -->
 
-        <a class="btn" href="assets/CV-Mikel-Briz-Descarga.pdf" target="_blank">
-            CV
+   <section id="hero">
+
+    <div class="hero-wrapper">
+
+        <h1 class="hero-name">
+            <span class="hero-intro-inline">Hi, I'm</span>
+            <span class="hero-name-highlight">Mikel Briz</span>
+        </h1>
+
+        <h2 class="hero-role">Mathematics Student | Aspiring Data Scientist</h2>
+
+        <p class="hero-description">
+            Focused on Data Science, Machine Learning and Mathematical Modeling.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:tuemail@email.com"><i class="fas fa-envelope"></i></a>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            Final-year Mathematics student passionate about Data Science,
+            Machine Learning and applied statistics.
+            Currently building projects focused on solving real-world problems
+            through data-driven approaches.
+        </p>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">Python</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">Statistics</div>
+            <div class="skill">Data Visualization</div>
+            <div class="skill">Git/GitHub</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CURRENTLY LEARNING -->
+
+    <section id="learning">
+
+        <h2>Currently Learning</h2>
+
+        <div class="learning-container">
+
+            <span>SQL</span>
+            <span>Machine Learning</span>
+            <span>Deep Learning</span>
+            <span>Cloud Fundamentals</span>
+            <span>MLOps</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- TIMELINE -->
+
+<section id="timeline">
+
+    <h2>Timeline</h2>
+
+    <!-- AÑOS (TABS) -->
+    <div class="timeline-tabs">
+
+        <button class="tab active" data-year="2022">2022</button>
+        <button class="tab" data-year="2024">2024</button>
+        <button class="tab" data-year="2025">2025</button>
+        <button class="tab" data-year="2026">2026</button>
+
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="timeline-content-box">
+
+        <div class="tab-content active" id="content-2022">
+            Started BSc in Mathematics
+        </div>
+
+        <div class="tab-content" id="content-2024">
+            First Python projects<br>
+            Introduction to Data Science tools
+        </div>
+
+        <div class="tab-content" id="content-2025">
+            Machine Learning exploration<br>
+            First real datasets analysis
+        </div>
+
+        <div class="tab-content" id="content-2026">
+            Building real-world projects<br>
+            Preparing for Data Science roles
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-box">
+
+            🚧 Exciting projects coming soon 🚧
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <h2>Get In Touch</h2>
+
+    <p>
+        Feel free to connect with me for opportunities, collaborations,
+        or simply to talk about Data Science and Mathematics.
+    </p>
+
+    <div class="contact-buttons">
+
+        <a href="https://github.com/mikelbriz13"
+           target="_blank"
+           class="contact-btn">
+            <i class="fab fa-github"></i>
+            GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/mikel-briz-desacarga/"
+           target="_blank"
+           class="contact-btn">
+            <i class="fab fa-linkedin"></i>
+            LinkedIn
+        </a>
+
+        <a href="mailto:mikelbriz@gmail.com"
+           class="contact-btn">
+            <i class="fas fa-envelope"></i>
+            Email Me
         </a>
 
     </div>
 
 </section>
 
-<!-- ABOUT -->
-<section id="about">
 
-    <div class="glass">
+    <!-- FOOTER -->
 
-    <h2>About me</h2>
+    <footer>
 
-    <div class="about-lines">
+        <p>© 2026 Mikel Briz | Built with HTML, CSS & JavaScript</p>
 
-        <p>Passionate about Data Science, Analytics, and AI applications.</p>
+    </footer>
 
-        <p>Building projects that tackle real-world problems.</p>
-
-        <p>Continuously learning Python, SQL, Machine Learning, and cloud technologies.</p>
-
-        <p>Aspiring to turn data into insights through mathematics and code.</p>
-
-    </div>
-
-</div>
-
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-
-    <h2>Skills</h2>
-
-    <div class="skills">
-
-        <div class="skill">
-            <i class="fab fa-python"></i>
-            <span>Python</span>
-        </div>
-
-        <div class="skill">
-            <i class="fas fa-database"></i>
-            <span>SQL</span>
-        </div>
-
-        <div class="skill">
-            <i class="fas fa-brain"></i>
-            <span>Machine Learning</span>
-        </div>
-
-        <div class="skill">
-            <i class="fas fa-chart-line"></i>
-            <span>Pandas</span>
-        </div>
-
-    </div>
-
-</section>
-<!-- PROJECTS -->
-<section id="projects">
-
-    <h2>Projects</h2>
-
-    <div class="project-box">
-
-        <h3 class="project-title">🚧 Under Construction 🚧</h3>
-
-        <p>
-            Data Science and Machine Learning projects in progress,
-            focused on real-world problems and applied data analysis.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-
-    <h2>Contact</h2>
-
-    <div class="socials">
-
-        <a href="https://github.com/mikelbriz13"><i class="fab fa-github"></i></a>
-        <a href="mailto:mikel@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/mikel-briz-desacarga/"><i class="fab fa-linkedin"></i></a>
-
-    </div>
-
-</section>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
