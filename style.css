@@ -232,12 +232,25 @@ nav{
    ABOUT
 ========================= */
 
-#about p{
+.about-box{
     max-width:800px;
-    margin:0 auto;
+    margin:auto;
+
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:15px;
+
+    padding:30px;
+
     text-align:center;
+    opacity:0.95;
+    transition:0.3s ease;
 }
 
+.about-box:hover{
+    transform:translateY(-3px);
+    border-color:#58a6ff;
+}
 
 /* =========================
    SKILLS
