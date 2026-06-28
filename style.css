@@ -247,10 +247,7 @@ nav{
     transition:0.3s ease;
 }
 
-.about-box:hover{
-    transform:translateY(-3px);
-    border-color:#58a6ff;
-}
+
 
 /* =========================
    SKILLS
@@ -293,10 +290,6 @@ nav{
     font-weight:bold;
 }
 
-.learning-container:hover{
-    transform:translateY(-3px);
-    border-color:#30363d;
-}
 
 
 /* =========================
