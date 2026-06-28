@@ -269,6 +269,10 @@ nav{
     border-radius:10px;
     border:1px solid #30363d;
 }
+.skill:hover{
+    transform:translateY(-3px);
+    border-color:#58a6ff;
+}
 
 /* =========================
    LEARNING
@@ -287,6 +291,11 @@ nav{
     padding:10px 20px;
     border-radius:25px;
     font-weight:bold;
+}
+
+.learning-container:hover{
+    transform:translateY(-3px);
+    border-color:#30363d;
 }
 
 
