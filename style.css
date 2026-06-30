@@ -268,7 +268,7 @@ nav{
     margin-bottom:40px;
 }
 
-/* burbujas */
+/* Botones de años */
 .tab{
     background:#161b22;
     border:1px solid #30363d;
@@ -282,42 +282,81 @@ nav{
     font-size:1rem;
 }
 
-/* hover */
 .tab:hover{
     border-color:#58a6ff;
     transform:translateY(-2px);
 }
 
-/* activo */
 .tab.active{
     background:#58a6ff;
     color:#0d1117;
     border-color:#58a6ff;
 }
 
-/* caja de contenido */
+/* Caja */
 .timeline-content-box{
     max-width:800px;
     margin:0 auto;
-    text-align:center;
 }
 
-/* contenido oculto */
+/* Contenido */
 .tab-content{
     display:none;
     background:#161b22;
-    padding:30px;
+    padding:35px;
     border-radius:15px;
     border:1px solid #30363d;
-    opacity:0.9;
+    opacity:0.95;
     transition:0.3s;
+
+    text-align:left;
 }
 
-/* activo */
 .tab-content.active{
     display:block;
 }
 
+/* Títulos */
+
+.tab-content h3{
+    color:#58a6ff;
+    font-size:1.35rem;
+    margin-top:25px;
+    margin-bottom:10px;
+}
+
+.tab-content h3:first-child{
+    margin-top:0;
+}
+
+/* Texto */
+
+.tab-content p{
+    color:#e6edf3;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+/* Etiquetas */
+
+.timeline-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.timeline-tags span{
+    background:#0d1117;
+    border:1px solid #30363d;
+    color:#58a6ff;
+
+    padding:6px 14px;
+    border-radius:20px;
+
+    font-size:0.85rem;
+    font-weight:600;
+}
 /* =========================
    PROJECTS
 ========================= */
