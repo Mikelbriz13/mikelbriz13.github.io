@@ -256,8 +256,9 @@ nav{
     margin-bottom:0;
 }
 
+
 /* =========================
-   TIMELINE TABS
+   TIMELINE TABS (FINAL CLEAN VERSION)
 ========================= */
 
 .timeline-tabs{
@@ -278,7 +279,7 @@ nav{
     border-radius:30px;
 
     cursor:pointer;
-    transition:0.3s;
+    transition:0.3s ease;
     font-size:1rem;
 }
 
@@ -293,35 +294,33 @@ nav{
     border-color:#58a6ff;
 }
 
-/* Caja */
+/* Caja contenedora */
 .timeline-content-box{
     max-width:800px;
     margin:0 auto;
 }
 
-/* Contenido */
+/* CONTENIDO */
 .tab-content{
     display:none;
     background:#161b22;
     padding:35px;
     border-radius:15px;
     border:1px solid #30363d;
-    opacity:0.95;
-    transition:0.3s;
 
     text-align:left;
+    opacity:0.95;
 }
 
 .tab-content.active{
     display:block;
 }
 
-/* Títulos */
-
+/* TITULOS */
 .tab-content h3{
     color:#58a6ff;
-    font-size:1.35rem;
-    margin-top:25px;
+    font-size:1.3rem;
+    margin-top:22px;
     margin-bottom:10px;
 }
 
@@ -329,21 +328,20 @@ nav{
     margin-top:0;
 }
 
-/* Texto */
-
+/* TEXTO */
 .tab-content p{
     color:#e6edf3;
-    line-height:1.8;
-    margin-bottom:20px;
+    line-height:1.7;
+    margin-bottom:18px;
+    opacity:0.9;
 }
 
-/* Etiquetas */
-
+/* TAGS */
 .timeline-tags{
     display:flex;
     flex-wrap:wrap;
     gap:10px;
-    margin-bottom:20px;
+    margin:10px 0 20px 0;
 }
 
 .timeline-tags span{
@@ -351,7 +349,7 @@ nav{
     border:1px solid #30363d;
     color:#58a6ff;
 
-    padding:6px 14px;
+    padding:6px 12px;
     border-radius:20px;
 
     font-size:0.85rem;
