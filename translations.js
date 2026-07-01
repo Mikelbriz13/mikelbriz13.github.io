@@ -1,67 +1,77 @@
 const translations = {
-    en: {
-        heroRole: "Mathematics Student | Aspiring Data Scientist",
 
-        aboutTitle: "About Me",
-        aboutP1: "Final-year Mathematics student deeply interested in working with data to extract meaningful insights.",
-        aboutP2: "I enjoy turning mathematical ideas into practical, data-driven solutions for real-world problems.",
-        aboutP3: "I am continuously improving my skills in Python, SQL, and machine learning frameworks while building a portfolio focused on applied problem-solving.",
+en: {
+    heroIntro: "Hi, I'm",
+    heroRole: "Mathematics Student | Aspiring Data Scientist",
+    heroDescription: "Focused on Data Analysis, Machine Learning and Mathematical Modeling",
 
-        timelineTitle: "Timeline",
+    aboutTitle: "About Me",
+    aboutP1: "Final-year Mathematics student interested in data.",
+    aboutP2: "I enjoy turning math into real solutions.",
+    aboutP3: "Improving Python, SQL and ML skills.",
 
-        t2019Title: "Bachelor's Degree in Mathematics",
-        t2019Text: "Started my Bachelor's Degree at the University of Málaga, developing a solid foundation in mathematical reasoning, analysis and problem solving.",
+    timelineTitle: "Timeline",
 
-        t2024Title: "Started Programming",
-        t2024Text: "Began learning Python and discovered how programming can be used to solve mathematical and analytical problems.",
+    t2019Title: "Bachelor's Degree in Mathematics",
+    t2019Text: "Started at University of Málaga.",
 
-        t2025Title: "Data Analysis & Data Science",
-        t2025Text: "Started learning data analysis and moved into machine learning and data science.",
+    t2024Title: "Started Programming",
+    t2024Text: "Learned Python and problem solving.",
 
-        t2026Title: "DataCamp & Portfolio",
-        t2026Text: "Currently building a portfolio and completing DataCamp career track.",
+    t2025Title: "Data Analysis & ML",
+    t2025Text: "Started data science journey.",
 
-        projectsTitle: "Projects",
-        projectsText: "🚧 Currently developing applied Data Science projects 🚧",
+    t2026Title: "Portfolio & DataCamp",
+    t2026Text: "Building projects and learning ML.",
 
-        skillsTitle: "Skills",
-        learningTitle: "Currently Learning",
-        contactTitle: "Get In Touch",
-        contactText: "Feel free to connect with me for opportunities, collaborations, or Data Science discussions.",
+    projectsTitle: "Projects",
+    projectsText: "Currently developing Data Science projects",
 
-        langBtn: "ES"
-    },
+    skillsTitle: "Skills",
+    learningTitle: "Currently Learning",
+    contactTitle: "Get In Touch",
+    contactText: "Feel free to connect.",
 
-    es: {
-        heroRole: "Estudiante de Matemáticas | Futuro Data Scientist",
+    footerText: "© 2026 Mikel Briz | Built with HTML, CSS & JS",
 
-        aboutTitle: "Sobre mí",
-        aboutP1: "Estudiante de último año de Matemáticas interesado en extraer insights de los datos.",
-        aboutP2: "Me gusta transformar ideas matemáticas en soluciones prácticas basadas en datos.",
-        aboutP3: "Estoy mejorando continuamente en Python, SQL y Machine Learning mientras construyo un portfolio aplicado.",
+    langBtn: "ES"
+},
 
-        timelineTitle: "Cronología",
+es: {
+    heroIntro: "Hola, soy",
+    heroRole: "Estudiante de Matemáticas | Futuro Data Scientist",
+    heroDescription: "Enfocado en análisis de datos y machine learning",
 
-        t2019Title: "Grado en Matemáticas",
-        t2019Text: "Comencé el Grado en la Universidad de Málaga, desarrollando bases sólidas en análisis matemático y resolución de problemas.",
+    aboutTitle: "Sobre mí",
+    aboutP1: "Estudiante de matemáticas interesado en datos.",
+    aboutP2: "Me gusta transformar matemáticas en soluciones.",
+    aboutP3: "Mejorando Python, SQL y ML.",
 
-        t2024Title: "Inicio en programación",
-        t2024Text: "Empecé a aprender Python y descubrí su utilidad en problemas matemáticos y analíticos.",
+    timelineTitle: "Cronología",
 
-        t2025Title: "Análisis de datos y Data Science",
-        t2025Text: "Comencé con análisis de datos y evolucioné hacia Machine Learning y Data Science.",
+    t2019Title: "Grado en Matemáticas",
+    t2019Text: "Comencé en la Universidad de Málaga.",
 
-        t2026Title: "DataCamp y portfolio",
-        t2026Text: "Actualmente construyendo portfolio y completando formación en DataCamp.",
+    t2024Title: "Inicio en programación",
+    t2024Text: "Aprendí Python y lógica.",
 
-        projectsTitle: "Proyectos",
-        projectsText: "🚧 Actualmente desarrollando proyectos de Data Science 🚧",
+    t2025Title: "Data Analysis & ML",
+    t2025Text: "Entré en Data Science.",
 
-        skillsTitle: "Habilidades",
-        learningTitle: "Actualmente aprendiendo",
-        contactTitle: "Contacto",
-        contactText: "Conecta conmigo para oportunidades, colaboraciones o charlas sobre Data Science.",
+    t2026Title: "Portfolio & DataCamp",
+    t2026Text: "Proyectos y aprendizaje ML.",
 
-        langBtn: "EN"
-    }
+    projectsTitle: "Proyectos",
+    projectsText: "Actualmente desarrollando proyectos de Data Science",
+
+    skillsTitle: "Habilidades",
+    learningTitle: "Aprendiendo actualmente",
+    contactTitle: "Contacto",
+    contactText: "Conecta conmigo.",
+
+    footerText: "© 2026 Mikel Briz | Hecho con HTML, CSS & JS",
+
+    langBtn: "EN"
+}
+
 };
