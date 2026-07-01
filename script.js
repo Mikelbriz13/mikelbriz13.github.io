@@ -1,4 +1,3 @@
-
 /* =========================
    SCROLL ANIMATIONS
 ========================= */
@@ -20,6 +19,7 @@ sections.forEach(section => {
     observer.observe(section);
 });
 
+
 /* =========================
    TIMELINE TABS
 ========================= */
@@ -36,9 +36,14 @@ tabs.forEach(tab => {
         tab.classList.add("active");
 
         const year = tab.getAttribute("data-year");
-        document.getElementById("content-" + year).classList.add("active");
+        const target = document.getElementById("content-" + year);
+
+        if (target) {
+            target.classList.add("active");
+        }
     });
 });
+
 
 /* =========================
    MOBILE NAVBAR
@@ -57,7 +62,8 @@ if (toggle && navLinks) {
             navLinks.classList.remove("active");
         });
     });
-});
+}
+
 
 /* =========================
    BACKGROUND CANVAS
@@ -82,6 +88,7 @@ window.addEventListener("resize", () => {
 
 resizeCanvas();
 
+
 class Particle {
     constructor(x, y, dx, dy, size) {
         this.x = x;
@@ -103,7 +110,6 @@ class Particle {
     }
 
     update() {
-
         if (this.x > canvas.width || this.x < 0) this.dx *= -1;
         if (this.y > canvas.height || this.y < 0) this.dy *= -1;
 
@@ -113,6 +119,7 @@ class Particle {
         this.draw();
     }
 }
+
 
 function init() {
     particlesArray = [];
@@ -133,6 +140,7 @@ function init() {
         particlesArray.push(new Particle(x, y, dx, dy, size));
     }
 }
+
 
 function connect() {
     let limit = isMobile ? 80 : 120;
@@ -161,6 +169,7 @@ function connect() {
     }
 }
 
+
 let lastTime = 0;
 let fpsLimit = isMobile ? 30 : 60;
 let interval = 1000 / fpsLimit;
@@ -183,56 +192,23 @@ function animate(time = 0) {
 init();
 animate();
 
+
 /* =========================
-   LANGUAGE SYSTEM
+   LANGUAGE BUTTON (SAFE VERSION)
 ========================= */
 
 const languageBtn = document.getElementById("language-btn");
 
 let lang = "en";
 
-function applyLanguage() {
+if (languageBtn) {
+    languageBtn.addEventListener("click", () => {
 
-    const t = translations[lang];
+        lang = lang === "en" ? "es" : "en";
 
-    document.getElementById("hero-role").textContent = t.heroRole;
+        languageBtn.textContent = lang.toUpperCase();
 
-    document.getElementById("about-title").textContent = t.aboutTitle;
-    document.getElementById("about-p1").textContent = t.aboutP1;
-    document.getElementById("about-p2").textContent = t.aboutP2;
-    document.getElementById("about-p3").textContent = t.aboutP3;
-
-    document.getElementById("timeline-title").textContent = t.timelineTitle;
-
-    document.getElementById("t2019-title").textContent = t.t2019Title;
-    document.getElementById("t2019-text").textContent = t.t2019Text;
-
-    document.getElementById("t2024-title").textContent = t.t2024Title;
-    document.getElementById("t2024-text").textContent = t.t2024Text;
-
-    document.getElementById("t2025-title").textContent = t.t2025Title;
-    document.getElementById("t2025-text").textContent = t.t2025Text;
-
-    document.getElementById("t2026-title").textContent = t.t2026Title;
-    document.getElementById("t2026-text").textContent = t.t2026Text;
-
-    document.getElementById("projects-title").textContent = t.projectsTitle;
-    document.getElementById("projects-text").textContent = t.projectsText;
-
-    document.getElementById("skills-title").textContent = t.skillsTitle;
-    document.getElementById("learning-title").textContent = t.learningTitle;
-
-    document.getElementById("contact-title").textContent = t.contactTitle;
-    document.getElementById("contact-text").textContent = t.contactText;
-
-    languageBtn.textContent = t.langBtn;
+        // aquí luego conectamos con translations.js
+        console.log("Language:", lang);
+    });
 }
-
-languageBtn.addEventListener("click", () => {
-
-    lang = lang === "en" ? "es" : "en";
-
-    applyLanguage();
-});
-
-applyLanguage();
