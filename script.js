@@ -52,17 +52,15 @@ if (toggle && navLinks) {
         navLinks.classList.toggle("active");
     });
 
-    const links = document.querySelectorAll("#nav-links a");
-
-    links.forEach(link => {
+    document.querySelectorAll("#nav-links a").forEach(link => {
         link.addEventListener("click", () => {
             navLinks.classList.remove("active");
         });
     });
-}
+});
 
 /* =========================
-   BACKGROUND ANIMATION (MOBILE OPTIMIZED)
+   BACKGROUND CANVAS
 ========================= */
 
 const canvas = document.getElementById("bg-canvas");
@@ -83,10 +81,6 @@ window.addEventListener("resize", () => {
 });
 
 resizeCanvas();
-
-/* =========================
-   PARTICLE CLASS
-========================= */
 
 class Particle {
     constructor(x, y, dx, dy, size) {
@@ -120,10 +114,6 @@ class Particle {
     }
 }
 
-/* =========================
-   INIT PARTICLES
-========================= */
-
 function init() {
     particlesArray = [];
 
@@ -143,10 +133,6 @@ function init() {
         particlesArray.push(new Particle(x, y, dx, dy, size));
     }
 }
-
-/* =========================
-   CONNECTION LINES
-========================= */
 
 function connect() {
     let limit = isMobile ? 80 : 120;
@@ -175,10 +161,6 @@ function connect() {
     }
 }
 
-/* =========================
-   ANIMATION LOOP (FPS CONTROL MOBILE)
-========================= */
-
 let lastTime = 0;
 let fpsLimit = isMobile ? 30 : 60;
 let interval = 1000 / fpsLimit;
@@ -201,24 +183,56 @@ function animate(time = 0) {
 init();
 animate();
 
+/* =========================
+   LANGUAGE SYSTEM
+========================= */
+
 const languageBtn = document.getElementById("language-btn");
-const heroRole = document.getElementById("hero-role");
 
-let isEnglish = true;
+let lang = "en";
+
+function applyLanguage() {
+
+    const t = translations[lang];
+
+    document.getElementById("hero-role").textContent = t.heroRole;
+
+    document.getElementById("about-title").textContent = t.aboutTitle;
+    document.getElementById("about-p1").textContent = t.aboutP1;
+    document.getElementById("about-p2").textContent = t.aboutP2;
+    document.getElementById("about-p3").textContent = t.aboutP3;
+
+    document.getElementById("timeline-title").textContent = t.timelineTitle;
+
+    document.getElementById("t2019-title").textContent = t.t2019Title;
+    document.getElementById("t2019-text").textContent = t.t2019Text;
+
+    document.getElementById("t2024-title").textContent = t.t2024Title;
+    document.getElementById("t2024-text").textContent = t.t2024Text;
+
+    document.getElementById("t2025-title").textContent = t.t2025Title;
+    document.getElementById("t2025-text").textContent = t.t2025Text;
+
+    document.getElementById("t2026-title").textContent = t.t2026Title;
+    document.getElementById("t2026-text").textContent = t.t2026Text;
+
+    document.getElementById("projects-title").textContent = t.projectsTitle;
+    document.getElementById("projects-text").textContent = t.projectsText;
+
+    document.getElementById("skills-title").textContent = t.skillsTitle;
+    document.getElementById("learning-title").textContent = t.learningTitle;
+
+    document.getElementById("contact-title").textContent = t.contactTitle;
+    document.getElementById("contact-text").textContent = t.contactText;
+
+    languageBtn.textContent = t.langBtn;
+}
 
 languageBtn.addEventListener("click", () => {
 
-    if (isEnglish) {
-        heroRole.textContent = "Estudiante de Matemáticas | Futuro Data Scientist";
-        languageBtn.textContent = "ES";
-    } else {
-        heroRole.textContent = "Mathematics Student | Aspiring Data Scientist";
-        languageBtn.textContent = "EN";
-    }
+    lang = lang === "en" ? "es" : "en";
 
-    isEnglish = !isEnglish;
+    applyLanguage();
 });
 
-languageBtn.addEventListener("click", () => {
-    console.log("Language button clicked");
-});
+applyLanguage();
