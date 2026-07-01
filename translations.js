@@ -1,5 +1,6 @@
 const translations = {
 
+    
 en: {
     heroIntro: "Hi, I'm",
     heroRole: "Mathematics Student | Aspiring Data Scientist",
