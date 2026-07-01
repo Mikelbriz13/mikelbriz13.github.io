@@ -1,5 +1,6 @@
 let currentLang = "en";
 
+
 function setLanguage(lang) {
 
     const t = translations[lang];
