@@ -200,3 +200,9 @@ function animate(time = 0) {
 
 init();
 animate();
+
+const languageBtn = document.getElementById("language-btn");
+
+languageBtn.addEventListener("click", () => {
+    console.log("Language button clicked");
+});
