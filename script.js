@@ -192,23 +192,20 @@ function animate(time = 0) {
 init();
 animate();
 
-
-/* =========================
-   LANGUAGE BUTTON (SAFE VERSION)
-========================= */
-
 const languageBtn = document.getElementById("language-btn");
+const heroRole = document.getElementById("hero-role");
 
-let lang = "en";
+let isEnglish = true;
 
-if (languageBtn) {
-    languageBtn.addEventListener("click", () => {
+languageBtn.addEventListener("click", () => {
 
-        lang = lang === "en" ? "es" : "en";
+    if (isEnglish) {
+        heroRole.textContent = "Estudiante de Matemáticas | Futuro Data Scientist";
+        languageBtn.textContent = "ES";
+    } else {
+        heroRole.textContent = "Mathematics Student | Aspiring Data Scientist";
+        languageBtn.textContent = "EN";
+    }
 
-        languageBtn.textContent = lang.toUpperCase();
-
-        // aquí luego conectamos con translations.js
-        console.log("Language:", lang);
-    });
-}
+    isEnglish = !isEnglish;
+});
