@@ -192,7 +192,3 @@ function animate(time = 0) {
 init();
 animate();
 
-
-
-    isEnglish = !isEnglish;
-});
