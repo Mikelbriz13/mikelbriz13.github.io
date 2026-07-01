@@ -79,6 +79,27 @@ nav{
 }
 
 /* =========================
+   LANGUAGE BUTTON
+========================= */
+
+.language-btn{
+    background:transparent;
+    border:1px solid #30363d;
+    color:white;
+
+    padding:8px 14px;
+    border-radius:20px;
+
+    cursor:pointer;
+    transition:0.3s;
+    font-size:0.9rem;
+}
+
+.language-btn:hover{
+    border-color:#58a6ff;
+    color:#58a6ff;
+}
+/* =========================
    HAMBURGER MENU (MOBILE)
 ========================= */
 
