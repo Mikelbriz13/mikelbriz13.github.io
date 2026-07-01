@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mikel Briz | Portfolio</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SKLGEW90M3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SKLGEW90M3');
+    </script>
 
     <link rel="stylesheet" href="style.css">
 
@@ -22,15 +29,17 @@
     <div class="logo">MB</div>
 
     <ul class="nav-links" id="nav-links">
-        <li><a href="#about" id="nav-about"></a></li>
-        <li><a href="#skills" id="nav-skills"></a></li>
-        <li><a href="#learning" id="nav-learning"></a></li>
-        <li><a href="#timeline" id="nav-timeline"></a></li>
-        <li><a href="#projects" id="nav-projects"></a></li>
-        <li><a href="#contact" id="nav-contact"></a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#learning">Learning</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 
-    <button id="language-btn">EN</button>
+    <button id="language-btn" class="language-btn">
+        EN
+    </button>
 
     <div class="menu-toggle" id="menu-toggle">☰</div>
 </nav>
@@ -41,15 +50,26 @@
     <div class="hero-wrapper">
 
         <h1 class="hero-name">
-            <span id="hero-intro"></span>
+            <span class="hero-intro-inline" id="hero-intro">Hi, I'm</span>
             <span class="hero-name-highlight">Mikel Briz</span>
         </h1>
 
-        <h2 class="hero-role" id="hero-role"></h2>
+        <h2 class="hero-role" id="hero-role">
+            Mathematics Student | Aspiring Data Scientist
+        </h2>
 
-        <p class="hero-description" id="hero-description"></p>
+        <p class="hero-description" id="hero-description">
+            Focused on Data Analysis, Machine Learning and Mathematical Modeling.
+        </p>
 
-        <a href="assets/Mikel_Briz_CV(EN).pdf" class="btn">CV</a>
+        <div class="hero-buttons">
+            <a href="assets/Mikel_Briz_CV(EN).pdf"
+               class="btn"
+               target="_blank"
+               rel="noopener noreferrer">
+               CV
+            </a>
+        </div>
 
     </div>
 
@@ -58,12 +78,22 @@
 <!-- ABOUT -->
 <section id="about">
 
-    <h2 id="about-title"></h2>
+    <h2 id="about-title">About Me</h2>
 
     <div class="about-box">
-        <p id="about-p1"></p>
-        <p id="about-p2"></p>
-        <p id="about-p3"></p>
+
+        <p id="about-p1">
+            Final-year Mathematics student deeply interested in working with data to extract meaningful insights.
+        </p>
+
+        <p id="about-p2">
+            I enjoy turning mathematical ideas into practical, data-driven solutions for real-world problems.
+        </p>
+
+        <p id="about-p3">
+            I am continuously improving my skills in Python, SQL, and machine learning frameworks while building a portfolio focused on applied problem-solving.
+        </p>
+
     </div>
 
 </section>
@@ -71,7 +101,7 @@
 <!-- TIMELINE -->
 <section id="timeline">
 
-    <h2 id="timeline-title"></h2>
+    <h2 id="timeline-title">Timeline</h2>
 
     <div class="timeline-tabs">
         <button class="tab active" data-year="2019">2019</button>
@@ -83,23 +113,31 @@
     <div class="timeline-content-box">
 
         <div class="tab-content active" id="content-2019">
-            <h3 id="t2019-title"></h3>
-            <p id="t2019-text"></p>
+            <h3 id="t2019-title">Bachelor's Degree in Mathematics</h3>
+            <p id="t2019-text">
+                Started my Bachelor's Degree at the University of Málaga...
+            </p>
         </div>
 
         <div class="tab-content" id="content-2024">
-            <h3 id="t2024-title"></h3>
-            <p id="t2024-text"></p>
+            <h3 id="t2024-title">Started Programming</h3>
+            <p id="t2024-text">
+                Began learning Python...
+            </p>
         </div>
 
         <div class="tab-content" id="content-2025">
-            <h3 id="t2025-title"></h3>
-            <p id="t2025-text"></p>
+            <h3 id="t2025-title">Data Analysis</h3>
+            <p id="t2025-text">
+                Started learning data analysis...
+            </p>
         </div>
 
         <div class="tab-content" id="content-2026">
-            <h3 id="t2026-title"></h3>
-            <p id="t2026-text"></p>
+            <h3 id="t2026-title">DataCamp & Portfolio</h3>
+            <p id="t2026-text">
+                Currently building portfolio and learning ML...
+            </p>
         </div>
 
     </div>
@@ -108,50 +146,69 @@
 
 <!-- PROJECTS -->
 <section id="projects">
-    <h2 id="projects-title"></h2>
-    <div class="project-box" id="projects-text"></div>
+    <h2 id="projects-title">Projects</h2>
+
+    <div class="project-box" id="projects-text">
+        🚧 Currently developing applied Data Science projects 🚧
+    </div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
-    <h2 id="skills-title"></h2>
+    <h2 id="skills-title">Skills</h2>
 
     <div class="skills-container">
         <div class="skill">Python</div>
         <div class="skill">SQL</div>
         <div class="skill">Machine Learning</div>
+        <div class="skill">Statistics</div>
+        <div class="skill">Data Visualization</div>
+        <div class="skill">Git/GitHub</div>
     </div>
 </section>
 
 <!-- LEARNING -->
 <section id="learning">
-    <h2 id="learning-title"></h2>
+    <h2 id="learning-title">Currently Learning</h2>
 
     <div class="learning-container">
         <span>SQL</span>
         <span>Machine Learning</span>
+        <span>Deep Learning</span>
+        <span>Cloud Fundamentals</span>
+        <span>MLOps</span>
     </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
 
-    <h2 id="contact-title"></h2>
+    <h2 id="contact-title">Get In Touch</h2>
 
-    <p id="contact-text"></p>
+    <p id="contact-text">
+        Feel free to connect with me for opportunities...
+    </p>
 
     <div class="contact-buttons">
 
-        <a href="https://github.com/mikelbriz13" class="contact-btn">GitHub</a>
-        <a href="mailto:mikelbriz@gmail.com" class="contact-btn">Email</a>
-        <a href="https://www.linkedin.com" class="contact-btn">LinkedIn</a>
+        <a href="https://github.com/mikelbriz13" class="contact-btn">
+            GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/mikelbriz/" class="contact-btn">
+            LinkedIn
+        </a>
+
+        <a href="mailto:mikelbriz@gmail.com" class="contact-btn">
+            Email Me
+        </a>
 
     </div>
 
 </section>
 
 <footer>
-    <p id="footer-text"></p>
+    <p id="footer-text">© 2026 Mikel Briz | Built with HTML, CSS & JS</p>
 </footer>
 
 <script src="translations.js"></script>
